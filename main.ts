@@ -20,6 +20,7 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 let robot = 0
+basic.showIcon(IconNames.Heart)
 radio.setGroup(1)
 robot = 0
 basic.forever(function () {
