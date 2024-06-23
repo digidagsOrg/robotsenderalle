@@ -12,7 +12,7 @@ input.onButtonPressed(Button.AB, function () {
     radio.sendNumber(robot)
 })
 input.onButtonPressed(Button.B, function () {
-    if (robot <= 3) {
+    if (robot <= 4) {
         robot += 1
         basic.showNumber(robot)
     } else {
