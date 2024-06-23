@@ -1,6 +1,6 @@
 input.onButtonPressed(Button.A, function () {
-    if (robot <= 3) {
-        robot += 1
+    if (robot >= 1) {
+        robot += -1
         basic.showNumber(robot)
     } else {
         robot = 0
@@ -12,8 +12,8 @@ input.onButtonPressed(Button.AB, function () {
     radio.sendNumber(robot)
 })
 input.onButtonPressed(Button.B, function () {
-    if (robot >= 1) {
-        robot += -1
+    if (robot <= 3) {
+        robot += 1
         basic.showNumber(robot)
     } else {
         robot = 0
