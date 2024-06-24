@@ -27,10 +27,16 @@ basic.forever(function () {
     if (robot == 0) {
         if (input.rotation(Rotation.Roll) < -20) {
             radio.sendNumber(14)
+            radio.sendNumber(15)
+            radio.sendNumber(8)
+            radio.sendNumber(2)
             basic.pause(2000)
         }
         if (input.rotation(Rotation.Roll) > 20) {
             radio.sendNumber(13)
+            radio.sendNumber(16)
+            radio.sendNumber(12)
+            radio.sendNumber(1)
             basic.pause(2000)
         }
     }
