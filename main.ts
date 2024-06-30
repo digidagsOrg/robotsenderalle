@@ -23,6 +23,7 @@ let robot = 0
 basic.showIcon(IconNames.Heart)
 radio.setGroup(1)
 robot = 0
+basic.showNumber(robot)
 basic.forever(function () {
     if (robot == 0) {
         if (input.rotation(Rotation.Roll) < -20) {
