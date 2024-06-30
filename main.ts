@@ -26,14 +26,14 @@ robot = 0
 basic.showNumber(robot)
 basic.forever(function () {
     if (robot == 0) {
-        if (input.rotation(Rotation.Roll) < -20) {
+        if (input.rotation(Rotation.Roll) < -30) {
             radio.sendNumber(14)
             radio.sendNumber(15)
             radio.sendNumber(8)
             radio.sendNumber(2)
             basic.pause(2000)
         }
-        if (input.rotation(Rotation.Roll) > 20) {
+        if (input.rotation(Rotation.Roll) > 30) {
             radio.sendNumber(13)
             radio.sendNumber(16)
             radio.sendNumber(12)
@@ -42,41 +42,41 @@ basic.forever(function () {
         }
     }
     if (robot == 1) {
-        if (input.rotation(Rotation.Roll) < -20) {
+        if (input.rotation(Rotation.Roll) < -30) {
             radio.sendNumber(14)
             basic.pause(2000)
         }
-        if (input.rotation(Rotation.Roll) > 20) {
+        if (input.rotation(Rotation.Roll) > 30) {
             radio.sendNumber(13)
             basic.pause(2000)
         }
     }
     if (robot == 2) {
-        if (input.rotation(Rotation.Roll) < -20) {
+        if (input.rotation(Rotation.Roll) < -30) {
             radio.sendNumber(15)
             basic.pause(2000)
         }
-        if (input.rotation(Rotation.Roll) > 20) {
+        if (input.rotation(Rotation.Roll) > 30) {
             radio.sendNumber(16)
             basic.pause(2000)
         }
     }
     if (robot == 3) {
-        if (input.rotation(Rotation.Roll) < -20) {
+        if (input.rotation(Rotation.Roll) < -30) {
             radio.sendNumber(8)
             basic.pause(2000)
         }
-        if (input.rotation(Rotation.Roll) > 20) {
+        if (input.rotation(Rotation.Roll) > 30) {
             radio.sendNumber(12)
             basic.pause(2000)
         }
     }
     if (robot == 4) {
-        if (input.rotation(Rotation.Roll) < -20) {
+        if (input.rotation(Rotation.Roll) < -30) {
             radio.sendNumber(2)
             basic.pause(2000)
         }
-        if (input.rotation(Rotation.Roll) > 20) {
+        if (input.rotation(Rotation.Roll) > 30) {
             radio.sendNumber(1)
             basic.pause(2000)
         }
